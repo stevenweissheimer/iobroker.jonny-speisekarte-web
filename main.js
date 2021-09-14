@@ -165,3 +165,17 @@ if (require.main !== module) {
 	// otherwise start the instance directly
 	new JonnySpeisekarteWeb();
 }
+
+const express = require('express')
+const app = express()
+const port = 3000
+const test =  getState('0_userdata.0.tagesgericht.gericht1.title').val;
+
+
+app.get('/', (req, res) => {
+  res.send('Hello World' + test + '<br>Test')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
