@@ -1,0 +1,85 @@
+{
+	"common": {
+		"name": "jonnys-speisekarte-web",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"titleLang": {
+			"en": "Jonnys Speisekarte for WWW",
+			"de": "Jonnys Speisekarte für WWW",
+			"ru": "Джоннис Спейсекарте для WWW",
+			"pt": "Jonnys Speisekarte para WWW",
+			"nl": "Jonnys Speisekarte voor WWW",
+			"fr": "Jonnys Speisekarte pour WWW",
+			"it": "Jonnys Speisekarte per WWW",
+			"es": "Jonnys Speisekarte para WWW",
+			"pl": "Jonnys Speisekarte dla WWW",
+			"zh-cn": "WWW 的 Jonnys Speisekarte"
+		},
+		"desc": {
+			"en": "jonnys-speisekarte-web",
+			"de": "jonnys-speisekarte-web",
+			"ru": "jonnys-speisekarte-web",
+			"pt": "jonnys-speisekarte-web",
+			"nl": "jonnys-speisekarte-web",
+			"fr": "jonnys-speisekarte-web",
+			"it": "jonnys-speisekarte-web",
+			"es": "jonnys-speisekarte-web",
+			"pl": "jonnys-speisekarte-web",
+			"zh-cn": "jonnys-speisekarte-web"
+		},
+		"authors": [
+			"stevenweissheimer <mail@stevenweissheimer.com>"
+		],
+		"keywords": [
+			"ioBroker",
+			"template",
+			"Smart Home",
+			"home automation"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "jonnys-speisekarte-web.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/stevenweissheimer/ioBroker.jonnys-speisekarte-web/master/admin/jonnys-speisekarte-web.png",
+		"readme": "https://github.com/stevenweissheimer/ioBroker.jonnys-speisekarte-web/blob/master/README.md",
+		"loglevel": "info",
+		"restartAdapters": [
+			"vis"
+		],
+		"localLinks": {
+			"_default": "%web_protocol%://%ip%:%web_port%/vis/edit.html"
+		},
+		"mode": "daemon",
+		"type": "general",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "poll",
+		"materialize": true,
+		"dependencies": [
+			{
+				"js-controller": ">=2.0.0"
+			},
+			"vis"
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": []
+}
