@@ -1,0 +1,85 @@
+{
+	"common": {
+		"name": "jonny-speisekarte-web",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"titleLang": {
+			"en": "Jonny Speisekarte Web",
+			"de": "Jonny Speisekarte Web",
+			"ru": "Jonny Speisekarte Web",
+			"pt": "Jonny Speisekarte Web",
+			"nl": "Jonny Speisekarte Web",
+			"fr": "Jonny Speisekarte Web",
+			"it": "Jonny Speisekarte Web",
+			"es": "Jonny Speisekarte Web",
+			"pl": "Jonny Speisekarte Web",
+			"zh-cn": "Jonny Speisekarte Web"
+		},
+		"desc": {
+			"en": "jonny-speisekarte-web",
+			"de": "jonny-speisekarte-web",
+			"ru": "jonny-speisekarte-web",
+			"pt": "jonny-speisekarte-web",
+			"nl": "jonny-speisekarte-web",
+			"fr": "jonny-speisekarte-web",
+			"it": "jonny-speisekarte-web",
+			"es": "jonny-speisekarte-web",
+			"pl": "jonny-speisekarte-web",
+			"zh-cn": "jonny-speisekarte-web"
+		},
+		"authors": [
+			"stevenweissheimer <mail@stevenweissheimer.com>"
+		],
+		"keywords": [
+			"ioBroker",
+			"template",
+			"Smart Home",
+			"home automation"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "jonny-speisekarte-web.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/stevenweissheimer/ioBroker.jonny-speisekarte-web/master/admin/jonny-speisekarte-web.png",
+		"readme": "https://github.com/stevenweissheimer/ioBroker.jonny-speisekarte-web/blob/master/README.md",
+		"loglevel": "info",
+		"restartAdapters": [
+			"vis"
+		],
+		"localLinks": {
+			"_default": "%web_protocol%://%ip%:%web_port%/vis/edit.html"
+		},
+		"mode": "daemon",
+		"type": "visualization",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "poll",
+		"materialize": true,
+		"dependencies": [
+			{
+				"js-controller": ">=2.0.0"
+			},
+			"vis"
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": []
+}
